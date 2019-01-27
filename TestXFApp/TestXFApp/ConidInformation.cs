@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TestXFApp
 {
-    class ConsidInformation
+    class ConidInformation
     {
         public string Title { get; set; }
         public string TitleShort { get; set; }
@@ -19,19 +19,20 @@ namespace TestXFApp
         {
             return Title;
         }
-        public static ConsidInformation GetPostList()
+        public static ConidInformation GetPostList()
         {
-            var considInfo = new ConsidInformation
+            var conidInfo = new ConidInformation
             {
                 Title = "Contact information",
                 TitleShort = "About",
                 Description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dolor orci, fermentum sit amet metus semper, pulvinar placerat dolor. Fusce pellentesque sed felis vitae ultrices. In hac habitasse platea dictumst. Ut ac sodales magna. Aliquam mattis enim ac ex vehicula suscipit. Nullam sed massa lacus. Mauris auctor aliquet mi, a lobortis ligula rhoncus eget. Nullam dictum sollicitudin eros et suscipit. Suspendisse potenti. Suspendisse scelerisque nisi consequat venenatis blandit",
-                Author = "Martin Bodin",
-                Address = "Västraöstergatan 5",
-                PhoneNr = "0450-666 666",
+                Author = "Issa Mohamad",
+                Address = "gatan 5",
+                PhoneNr = "0477-886 606",
                 Email = "someone@somewhere.com",
                 };
-            return considInfo;
+
+            return conidInfo;
         }
     }
 }

@@ -64,35 +64,7 @@ namespace TestXFApp
                 }
             };
 
-            //var layout = new StackLayout();
-            //var page = new Page();
-            //page.Title = "eded";
-            //var label1 = new Label()
-            //{
-            //    Text = "Consid ASD"
-            //};
-
-            //var label2 = new Label()
-            //{
-            //    Text = "Address info"
-            //};
-
-            //var label3 = new Label()
-            //{
-            //    Text = "Länk för google map.."
-            //};
-
-            //var label4 = new Label()
-            //{
-            //    Text = "mer info.."
-            //};
-
-            //layout.Children.Add(label1);
-            //layout.Children.Add(label2);
-            //layout.Children.Add(label3);
-            //layout.Children.Add(label4);
-
-            //Content = layout;
+          
         }
     }
 }
