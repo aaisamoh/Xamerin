@@ -1,0 +1,57 @@
+﻿     public class ActivateUpdate
+    {
+        private Handler handler;
+        private Runnable runnable;
+        public ActivateUpdate(int sec)
+        {
+            // the simplest way to start background tasks is to use create a Task, assign
+            // some work to it, and call start.
+
+            Task TaskA = new Task(() =>
+            {
+
+                LongRunningProcess(sec);
+
+            });
+
+            TaskA.Start();
+        }
+
+        /// <summary>
+        /// Simulation method to sit for a number of hour.
+        /// </summary>
+        protected void LongRunningProcess(int time)
+        {
+
+            try
+            {
+                while (true)
+                {
+                    Java.Lang.Thread.Sleep(time);
+                    MyMethod();
+                }
+            }
+            catch (Java.Lang.Exception)
+            {
+                System.Diagnostics.Debug.WriteLine("Thread Abort Exception");
+            }
+            finally
+            {
+                System.Diagnostics.Debug.WriteLine("Couldn't catch the Thread Exception");
+            }
+
+            /* NSTimer timer = NSTimer.CreateRepeatingTimer(TimeSpan.FromSeconds(time),delegate{ MyMethod(); } );*/
+
+        }
+        protected virtual void Dispose(System.Boolean disposing)
+        {
+            Dispose(disposing);
+        }
+        // It Calls MyMethod(); every 1 seconds.
+        protected static void MyMethod()
+        {
+            System.Diagnostics.Debug.WriteLine("Test uppdatering data ....! ");
+
+
+
+        }
